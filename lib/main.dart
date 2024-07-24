@@ -12,7 +12,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Title"),
+          title: Text(
+            "Title",
+            style: TextStyle(
+                color: Colors.white, fontSize: 30, fontWeight: FontWeight.bold),
+          ),
           backgroundColor: Colors.lightBlue,
           centerTitle: true,
           leading: Icon(
@@ -20,6 +24,18 @@ class MyApp extends StatelessWidget {
             color: Colors.black,
             size: 20,
           ),
+          actions: [
+            Icon(
+              Icons.notifications,
+              color: Colors.red,
+              size: 16,
+            ),
+            Icon(
+              Icons.shopping_cart,
+              color: Colors.white,
+              size: 35,
+            ),
+          ],
         ),
       ),
     );
